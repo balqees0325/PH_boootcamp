@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- fontqwesome kit code -->
+  <script src="https://kit.fontawesome.com/452c25fd08.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>PH first task</title>
+</head>
+<body>
+<div class="container">
+  <div class="navbar">
+  <h2>Porfolio</h2>
+  <nav>
+    <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i>
+    </button>
+    <ul class="nav-ul" id="nav-ul">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  </div>
+  
+</div>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navUl = document.getElementById('nav-ul');
+
+    hamburger.addEventListener('click', () => {
+    navUl.classList.toggle('show');
+});
+  </script>
+</body>
+</html>
