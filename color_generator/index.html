@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>color generator</title>
+</head>
+<body>
+  <div class="container">
+    <p>click the button to generate colors</p>
+    <button class="btn">
+    click me!!!
+    </button>
+  </div>
+
+  <script>
+    const btn = document.querySelector('.btn');
+    const container = document.querySelector('.container');
+    const getRandomColor = () => {
+      container.style.backgroundColor = 'rgb('+ Math.floor(Math.random() * 255)+ ',' + Math.floor(Math.random() * 255)+ ',' + Math.floor(Math.random() * 255) +')';
+    }
+    btn.addEventListener('click', getRandomColor);
+  </script>
+</body>
+</html>
